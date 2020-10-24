@@ -80,9 +80,9 @@
   # hardware.pulseaudio.enable = true;
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.layout = "fr";
-  services.xserver.xkbOptions = "eurosign:e";
+  # services.xserver.enable = true;
+  # services.xserver.layout = "fr";
+  # services.xserver.xkbOptions = "eurosign:e";
 
   # Enable touchpad support.
   # services.xserver.libinput.enable = true;

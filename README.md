@@ -29,7 +29,7 @@ Connect to the Internet.
 ### Running the installer
 Open Terminal and download the installation script:
 
-```$ curl -O https://raw.githubusercontent.com/1000101/ni/master/ni.sh```
+```$ curl -O https://raw.githubusercontent.com/aheaume/ni/master/ni.sh```
 
 Run the installation script:
 

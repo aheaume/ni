@@ -9,6 +9,16 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
+    
+  # Specify the encrypted disk # TODO: TEMPORARY, move this to system specific file
+  boot.initrd.luks.devices.root = {
+    device = "##device##2"; 
+    preLVM = true;
+  };
+  # Initial root password # TODO: TEMPORARY, reset the root password
+  users.users.root.initialHashedPassword = "##rootpasswd##";
+  # TODO: TEMPORARY, change the hostname
+  networking.hostName = "nixos";
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
